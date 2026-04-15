@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Luxury Car Rentals | Premium Car Rental Services</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <nav class="navbar">
+<a href="index.html" class="logo">
+                    <i class="fas fa-car-side"></i> Luxury <span>Car Rentals</span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#fleet">Fleet</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="nav-buttons">
+                    <a href="#contact" class="btn btn-primary">Book Now</a>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="container">
+<span class="hero-badge">Premium Car Rental Service</span>
+                <h1>Drive Your Dreams <br>With <span class="highlight">Luxury Car Rentals</span></h1>
+                <p>Experience premium car rental services with competitive prices, unlimited miles, and exceptional customer service. Your journey starts here.</p>
+                <div class="hero-buttons">
+                    <a href="#fleet" class="btn btn-primary"><i class="fas fa-car"></i> View Fleet</a>
+                    <a href="#contact" class="btn btn-outline"><i class="fas fa-phone"></i> Contact Us</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Vehicles</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">50K+</span>
+                        <span class="stat-label">Customers</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Locations</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search/Booking Section -->
+    <section class="booking-section">
+        <div class="container">
+            <form class="booking-form" id="quickBookingForm">
+                <div class="form-group">
+                    <label><i class="fas fa-map-marker-alt"></i> Pick-up Location</label>
+                    <input type="text" id="pickupLocation" placeholder="Enter city or airport">
+                </div>
+                <div class="form-group">
+                    <label><i class="fas fa-calendar"></i> Pick-up Date</label>
+                    <input type="date" id="pickupDate">
+                </div>
+                <div class="form-group">
+                    <label><i class="fas fa-calendar"></i> Return Date</label>
+                    <input type="date" id="returnDate">
+                </div>
+                <div class="form-group">
+                    <label><i class="fas fa-car"></i> Car Type</label>
+                    <select id="carType">
+                        <option value="">Select car type</option>
+                        <option value="economy">Economy</option>
+                        <option value="compact">Compact</option>
+                        <option value="suv">SUV</option>
+                        <option value="luxury">Luxury</option>
+                        <option value="van">Van/Minivan</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Search Cars</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">What We Offer</span>
+                <h2>Our Services</h2>
+                <p>Comprehensive car rental solutions tailored to meet your every need</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-calendar-day"></i>
+                    </div>
+                    <h3>Daily Rentals</h3>
+                    <p>Flexible daily rental options perfect for business trips, vacations, or weekend getaways with transparent pricing.</p>
+                    <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-calendar-week"></i>
+                    </div>
+                    <h3>Long-Term Leases</h3>
+                    <p>Economical solutions for extended rentals. Save more with our weekly and monthly plans with special discounts.</p>
+                    <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-plane-departure"></i>
+                    </div>
+                    <h3>Airport Transfers</h3>
+                    <p>Reliable pickup and drop-off services. We monitor your flight for timely service, even with delays.</p>
+                    <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Corporate Accounts</h3>
+                    <p>Specialized corporate pricing with dedicated account management and streamlined billing for businesses.</p>
+                    <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Premium Insurance</h3>
+                    <p>Comprehensive insurance options including CDW, PAI, and theft protection for complete peace of mind.</p>
+                    <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-wrench"></i>
+                    </div>
+                    <h3>24/7 Roadside Assistance</h3>
+                    <p>Round-the-clock emergency support for flat tires, battery jumps, fuel delivery, and lockout services.</p>
+                    <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fleet Section -->
+    <section class="fleet" id="fleet">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Our Inventory</span>
+                <h2>Featured Fleet</h2>
+                <p>Choose from our wide selection of well-maintained, latest model vehicles</p>
+            </div>
+            <div class="fleet-tabs">
+                <button class="fleet-tab active" data-category="all">All</button>
+                <button class="fleet-tab" data-category="economy">Economy</button>
+                <button class="fleet-tab" data-category="suv">SUV</button>
+                <button class="fleet-tab" data-category="luxury">Luxury</button>
+                <button class="fleet-tab" data-category="van">Van</button>
+            </div>
+            <div class="fleet-grid">
+                <div class="car-card" data-category="economy">
+                    <div class="car-image">
+                        <span class="car-badge">Best Seller</span>
+                        <i class="fas fa-car"></i>
+                    </div>
+<div class="car-details">
+                        <h3>Toyota Corolla</h3>
+                        <p class="car-category">Economy Sedan</p>
+                        <div class="car-features">
+                            <span><i class="fas fa-user"></i> 5 Seats</span>
+                            <span><i class="fas fa-cog"></i> Auto</span>
+                            <span><i class="fas fa-gas-pump"></i> 18 km/L</span>
+                        </div>
+                        <div class="car-price">
+                            <span class="price">₹2,400</span>
+                            <span class="period">/day</span>
+                        </div>
+                        <button class="btn btn-primary btn-block book-btn" data-car="Toyota Corolla">Book Now</button>
+                    </div>
+                </div>
+                <div class="car-card" data-category="suv">
+                    <div class="car-image">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <div class="car-details">
+                        <h3>Honda CR-V</h3>
+                        <p class="car-category">Compact SUV</p>
+                        <div class="car-features">
+                            <span><i class="fas fa-user"></i> 5 Seats</span>
+                            <span><i class="fas fa-cog"></i> Auto</span>
+                            <span><i class="fas fa-snowflake"></i> AWD</span>
+                        </div>
+                        <div class="car-price">
+                            <span class="price">₹3,700</span>
+                            <span class="period">/day</span>
+                        </div>
+                        <button class="btn btn-primary btn-block book-btn" data-car="Honda CR-V">Book Now</button>
+                    </div>
+                </div>
+                <div class="car-card" data-category="luxury">
+                    <div class="car-image">
+                        <span class="car-badge premium">Premium</span>
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <div class="car-details">
+                        <h3>BMW 3 Series</h3>
+                        <p class="car-category">Luxury Sedan</p>
+                        <div class="car-features">
+                            <span><i class="fas fa-user"></i> 5 Seats</span>
+                            <span><i class="fas fa-cog"></i> Auto</span>
+                            <span><i class="fas fa-bolt"></i> Sport</span>
+                        </div>
+                        <div class="car-price">
+                            <span class="price">₹7,400</span>
+                            <span class="period">/day</span>
+                        </div>
+                        <button class="btn btn-primary btn-block book-btn" data-car="BMW 3 Series">Book Now</button>
+                    </div>
+                </div>
+                <div class="car-card" data-category="suv">
+                    <div class="car-image">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <div class="car-details">
+                        <h3>Ford Explorer</h3>
+                        <p class="car-category">Full Size SUV</p>
+                        <div class="car-features">
+                            <span><i class="fas fa-user"></i> 7 Seats</span>
+                            <span><i class="fas fa-cog"></i> Auto</span>
+                            <span><i class="fas fa-snowflake"></i> 4WD</span>
+                        </div>
+                        <div class="car-price">
+                            <span class="price">₹5,400</span>
+                            <span class="period">/day</span>
+                        </div>
+                        <button class="btn btn-primary btn-block book-btn" data-car="Ford Explorer">Book Now</button>
+                    </div>
+                </div>
+                <div class="car-card" data-category="van">
+                    <div class="car-image">
+                        <i class="fas fa-shuttle-van"></i>
+                    </div>
+                    <div class="car-details">
+                        <h3>Chrysler Pacifica</h3>
+                        <p class="car-category">Minivan</p>
+                        <div class="car-features">
+                            <span><i class="fas fa-user"></i> 7 Seats</span>
+                            <span><i class="fas fa-cog"></i> Auto</span>
+                            <span><i class="fas fa-box"></i> Cargo</span>
+                        </div>
+                        <div class="car-price">
+                            <span class="price">₹4,600</span>
+                            <span class="period">/day</span>
+                        </div>
+                        <button class="btn btn-primary btn-block book-btn" data-car="Chrysler Pacifica">Book Now</button>
+                    </div>
+                </div>
+                <div class="car-card" data-category="luxury">
+                    <div class="car-image">
+                        <span class="car-badge premium">Luxury</span>
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <div class="car-details">
+                        <h3>Mercedes C-Class</h3>
+                        <p class="car-category">Executive Luxury</p>
+                        <div class="car-features">
+                            <span><i class="fas fa-user"></i> 5 Seats</span>
+                            <span><i class="fas fa-cog"></i> Auto</span>
+                            <span><i class="fas fa-star"></i> Leather</span>
+                        </div>
+                        <div class="car-price">
+                            <span class="price">₹8,200</span>
+                            <span class="period">/day</span>
+                        </div>
+                        <button class="btn btn-primary btn-block book-btn" data-car="Mercedes C-Class">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-us" id="about">
+        <div class="container">
+            <div class="section-header light">
+                <span class="section-subtitle">Why Choose Us</span>
+                <h2>Experience the Difference</h2>
+                <p>We're committed to providing the best rental experience in the industry</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Award Winning Service</h3>
+                    <p>Recognized as the best car rental service for 5 consecutive years by industry experts.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-tag"></i>
+                    </div>
+                    <h3>Best Price Guarantee</h3>
+                    <p>Find a lower price elsewhere? We'll match it and give you an additional 10% discount.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Express Pickup</h3>
+                    <p>Be on the road in under 5 minutes with our express check-in and keyless pickup.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-globe-americas"></i>
+                    </div>
+                    <h3>50+ Locations</h3>
+                    <p>Convenient pickup and drop-off at airports, hotels, and city centers nationwide.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>New Fleet</h3>
+                    <p>All vehicles are less than 2 years old with under 30,000 miles for maximum reliability.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>24/7 Support</h3>
+                    <p>Dedicated customer support available round the clock to assist you anywhere, anytime.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Testimonials</span>
+                <h2>What Our Customers Say</h2>
+                <p>Don't just take our word for it - hear from our satisfied customers</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Amazing service from start to finish! The car was immaculate, the pickup process was smooth, and the staff was incredibly helpful. Will definitely use DriveAway for all my future trips."</p>
+                    <div class="testimonial-author">
+                        <div class="author-image">JM</div>
+                        <div class="author-info">
+                            <h4>John Miller</h4>
+                            <span>Business Executive</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Best rental experience I've ever had. The online booking was seamless, prices were very competitive, and the car exceeded my expectations. Highly recommended!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-image">SK</div>
+                        <div class="author-info">
+                            <h4>Sarah Kim</h4>
+                            <span>Frequent Traveler</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"We rented a minivan for our family vacation and it was perfect. Plenty of space, great fuel efficiency, and excellent customer service throughout our trip."</p>
+                    <div class="testimonial-author">
+                        <div class="author-image">RT</div>
+                        <div class="author-info">
+                            <h4>Robert Thompson</h4>
+                            <span>Family Traveler</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Get In Touch</span>
+                <h2>Contact Us</h2>
+                <p>Ready to book your next adventure? We'd love to hear from you!</p>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+<div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Visit Us</h4>
+                            <p>Luxury Car Rentals<br>Ambi, Pune - 410506</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Call Us</h4>
+                            <p>+91 9845612395<br>24/7 Emergency: +91 9845612395</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email Us</h4>
+                            <p>contact@luxuryrentals.com<br>info@luxuryrentals.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Hours</h4>
+                            <p>Mon-Fri: 8AM - 8PM<br>Sat-Sun: 9AM - 6PM</p>
+                        </div>
+                    </div>
+                    <div class="social-media">
+                        <h4>Follow Us</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form id="contactForm" class="contact-form">
+                        <h3>Send Us a Message</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="service">Service Interested In</label>
+                                <select id="service" name="service">
+                                    <option value="">Select a service</option>
+                                    <option value="daily">Daily Rental</option>
+                                    <option value="longterm">Long-Term Lease</option>
+                                    <option value="airport">Airport Transfer</option>
+                                    <option value="corporate">Corporate Account</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+<div class="footer-about">
+                    <a href="index.html" class="logo">
+                        <i class="fas fa-car-side"></i> Luxury <span>Car Rentals</span>
+                    </a>
+                    <p>Your trusted partner for premium car rental services at Luxury Car Rentals, Ambi Pune. We're committed to providing exceptional service and unforgettable driving experiences.</p>
+                    <div class="footer-certifications">
+                        <span><i class="fas fa-check-circle"></i> Licensed & Insured</span>
+                        <span><i class="fas fa-shield-alt"></i> Secure Booking</span>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#fleet">Our Fleet</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Daily Rentals</a></li>
+                        <li><a href="#">Long-Term Leases</a></li>
+                        <li><a href="#">Airport Transfers</a></li>
+                        <li><a href="#">Corporate Accounts</a></li>
+                        <li><a href="#">Insurance Options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe for special offers and updates</p>
+                    <form class="newsletter-form" id="newsletterForm">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+<div class="footer-bottom">
+                <p>&copy; 2024 Luxury Car Rentals. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <div class="toast-content">
+            <i class="fas fa-check-circle"></i>
+            <span id="toastMessage">Message sent successfully!</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
